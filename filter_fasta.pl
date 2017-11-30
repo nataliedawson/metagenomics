@@ -21,7 +21,7 @@ Example:
 $0 \
    --fasta                       1.10.8.10-ff-9390.faa \
    --filter_length               100 \
-   --out_file                    1.10.8.10-ff-9390.filtered.faa
+   --fasta_out                    1.10.8.10-ff-9390.filtered.faa
 
 Takes a FASTA file and filters out sequences that are lower than a specified threshold.
 
