@@ -34,6 +34,29 @@ A typical FASTA file in this case is one containing contiguous sequences (contig
 Use `extract_protein_sequences_using_id_list.pl` to extract protein sequences of interest from a FASTA file using a specific list of ids.
 
 ```
-Usage: ./extract_protein_sequences_using_id_list.pl <FASTA_file> <IDs_file> <output_file>
+$ ./extract_protein_sequences_using_id_list.pl
+Usage:
+./extract_protein_sequences_using_id_list.pl [required]
+
+Required:
+                --fasta                    FASTA file to be filtered
+                --ids_file                 Files of sequence ids to extract entries from FASTA
+                --fasta_out                FASTA file to contain the extracted sequences
+
+Example:
+./extract_protein_sequences_using_id_list.pl 
+   --fasta                       metagenome_contigs.faa 
+   --ids_file                    ids_of_interest.dat 
+   --fasta_out                   metagenome_contigs.extracted_genes_of_interest.faa
+
+Content example for --ids_file:
+1244082_1
+1244082_2
+1244082_3
+1244638_1
+1244638_2
+1244638_3
+
+Takes a FASTA file and extracts sequences using a specified list of ids.
 ```
 
