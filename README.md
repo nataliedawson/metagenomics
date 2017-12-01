@@ -27,6 +27,8 @@ Takes a FASTA file and filters out sequences that are lower than a specified thr
 
 Extract protein sequences of interest from a FASTA file
 -------------------------------------------------------
+To identify protein sequences of interest in the first place, I would recommend following the workflow in the cath-tools-genomescan repository: https://github.com/UCLOrengoGroup/cath-tools-genomescan. This generates CATH assignments for sets of query sequences, e.g. metagenome sequence reads, and these assignments can be mined to find functions of interest.
+
 This script was written to help a collaborator who wants to extract numerous, specific protein sequences of interest from a large FASTA file. This avoids the issues involved in attempting to open files that are GBs in size, and then (if the file actually opens) having to then look for numerous sequences to copy and paste.
 
 A typical FASTA file in this case is one containing contiguous sequences (contigs), assembled from metagenome sequence reads. These files are very large in terms of: size, the number of sequences, sequence lengths. You may be interested in genes that code for a particular family of enzymes, for example, and you can specify the ids that these genes correspond to in the FASTA file.
